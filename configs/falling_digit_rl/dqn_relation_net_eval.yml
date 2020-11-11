@@ -1,0 +1,16 @@
+network:
+    type: 'RelationNet'
+DQN:
+    replay:
+        is_async: False
+    async_actor: False
+train:
+    save_interval: 0
+    log_interval: 0
+    n_checkpoints_to_keep: 0
+eval:
+    eval_only: True
+    n_episodes: 1000
+    env_subprocess: False
+    parallel: False
+    is_async: False

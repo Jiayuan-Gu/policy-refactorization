@@ -1,0 +1,50 @@
+MODEL:
+  TYPE: 'SPACE_v0'
+DATASET:
+  NAME: 'FallingDigit'
+  TRAIN:
+    path: 'PASTE_YOUR_DEMO_DATASET_PATH_HERE'
+    start: 0
+    end: 60000
+  VAL:
+    path: 'PASTE_YOUR_DEMO_DATASET_PATH_HERE'
+    start: 60000
+    end: -1
+PRIOR:
+  z_pres_p:
+    type: 'LogLinearScheduler'
+    values: (0.05, 0.005)
+    milestones: (0, 50000)
+    interval: 1000
+  z_where_loc: (0.0, 0.0, 0.0, 0.0)
+  z_where_scale: (0.2, 0.2, 0.2, 0.2)
+  z_what_loc: 0.0
+  z_what_scale: 1.0
+  z_depth_loc: 0.0
+  z_depth_scale: 1.0
+  fg_recon_scale: 0.15
+  bg_recon_scale: 0.1
+WEIGHT:
+  recon_weight: 1.0
+  kl_weight: 1.0
+  temperature:
+    type: 'LogLinearScheduler'
+    values: (2.5, 0.5)
+    milestones: (0, 50000)
+    interval: 1000
+OPTIMIZER:
+  TYPE: "Adam"
+  LR: 1e-3
+  MAX_GRAD_NORM: 10.0
+TRAIN:
+  MAX_ITER: 60000
+  BATCH_SIZE: 8
+  NUM_WORKERS: 1
+  LOG_PERIOD: 100
+  SUMMARY_PERIOD: 500
+  CHECKPOINT_PERIOD: 5000
+  MAX_TO_KEEP: 1
+VAL:
+  BATCH_SIZE: 8
+  NUM_WORKERS: 1
+  PERIOD: 5000

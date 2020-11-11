@@ -1,0 +1,23 @@
+RL:
+    max_steps: 2500000
+network:
+    type: 'RelationNet'
+DQN:
+    replay:
+        memory_size: 100000
+        batch_size: 32
+    e_greedy: (1.0, 0.1, 300000)
+    target_network_update_freq: 500
+    exploration_steps: 10000
+    double_q: True
+optimizer:
+    lr: 1e-4
+train:
+    save_interval: 30000
+    n_checkpoints_to_keep: 20
+eval:
+    interval: 30000
+    env_subprocess: False
+    parallel: False
+
+  

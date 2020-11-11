@@ -1,0 +1,38 @@
+MODEL:
+  TYPE: 'EdgeConvNet'
+  EdgeConvNet:
+    output_dim: 3
+DATASET:
+  NAME: 'FallingDigitPatch'
+  TRAIN:
+    data_path: 'PASTE_YOUR_DEMO_DATASET_PATH_HERE'
+    proposals_path: 'PASTE_YOUR_PROPOSAL_DATASET_PATH_HERE'
+    std: (0.005,)
+    start: 0
+    end: 60000
+  VAL:
+    data_path: 'PASTE_YOUR_DEMO_DATASET_PATH_HERE'
+    proposals_path: 'PASTE_YOUR_PROPOSAL_DATASET_PATH_HERE'
+    start: 60000
+    end: -1
+OPTIMIZER:
+  TYPE: "Adam"
+  LR: 1e-3
+LR_SCHEDULER:
+  TYPE: "StepLR"
+  StepLR:
+    step_size: 100000
+    gamma: 0.5
+TRAIN:
+  MAX_ITER: 200000
+  BATCH_SIZE: 32
+  NUM_WORKERS: 2
+  LOG_PERIOD: 500
+  SUMMARY_PERIOD: 1000
+  CHECKPOINT_PERIOD: 10000
+  MAX_TO_KEEP: 1
+VAL:
+  BATCH_SIZE: 32
+  NUM_WORKERS: 1
+  PERIOD: 10000
+  METRIC: 'acc'
