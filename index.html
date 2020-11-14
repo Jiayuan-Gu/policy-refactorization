@@ -120,6 +120,10 @@
     height: 1.5px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   }
+  div {
+    width: 250px;
+    word-wrap: break-word;
+  }
 </style>
 
 <html>
@@ -134,7 +138,7 @@
   <br>
   <center>
     <span style="font-size:42px">
-      Refactoring Policy for Compositional Generalizabilityusing Self-Supervised Object Proposals</span>
+      Refactoring Policy for Compositional Generalizability using Self-Supervised Object Proposals</span>
   </center>
 
   <br><br>
@@ -142,27 +146,48 @@
     <tr>
       <td align=center width=100px>
         <center>
-          <span style="font-size:20px"><a href="">Tongzhou Mu<sup>*</sup></a></span>
+          <span style="font-size:20px"><a href="">Tongzhou Mu<sup>* 1</sup></a></span>
         </center>
       </td>
       <td align=center width=100px>
         <center>
-          <span style="font-size:20px"><a href="https://cseweb.ucsd.edu/~jigu/">Jiayuan Gu<sup>*</sup></a></span>
+          <span style="font-size:20px"><a href="https://cseweb.ucsd.edu/~jigu/">Jiayuan Gu<sup>* 1</sup></a></span>
         </center>
       </td>
       <td align=center width=100px>
         <center>
-          <span style="font-size:20px">Zhiwei Jia</span>
+          <span style="font-size:20px"><a href="https://zjia.eng.ucsd.edu/">Zhiwei Jia<sup>1</sup></a></span>
         </center>
       </td>
       <td align=center width=100px>
         <center>
-          <span style="font-size:20px">Hao Tang</span>
+          <span style="font-size:20px"><a href="https://haotang1995.github.io/">Hao Tang<sup>2</sup></a></span>
         </center>
       </td>
       <td align=center width=100px>
         <center>
-          <span style="font-size:20px"><a href="https://cseweb.ucsd.edu/~haosu/">Hao Su<sup>*</sup></a></span>
+          <span style="font-size:20px"><a href="https://cseweb.ucsd.edu/~haosu/">Hao Su<sup>1</sup></a></span>
+        </center>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <table align=center width=800px>
+    <tr>
+      <td align=center width=100px>
+        <center>
+          <span style="font-size:16px"><sup>1</sup>University of California San Diego</span>
+        </center>
+      </td>
+      <td align=center width=100px>
+        <center>
+          <span style="font-size:16px"><sup>2</sup>Shanghai Jiao Tong University</span>
+        </center>
+      </td>
+      <td align=center width=100px>
+        <center>
+          <span style="font-size:16px"><sup>*</sup>Equal contribution</span>
         </center>
       </td>
     </tr>
@@ -173,49 +198,446 @@
     <tr>
       <td align=center width=100px>
         <center>
-          <span style="font-size:20px">University of California San Diego</span>
-        </center>
-      </td>
-      <td align=center width=100px>
-        <center>
-          <span style="font-size:20px">Shanghai Jiao Tong University</span>
+          <span style="font-size:24px"><b>NeurIPS 2020</b></span>
         </center>
       </td>
     </tr>
   </table>
 
-  <br>
-  <table align=center width=700px>
-    <tr>
-      <td align=center width=100px>
-        <center>
-          <span style="font-size:20px">NeurIPS 2020</span>
-        </center>
-      </td>
-    </tr>
-  </table>
+	<br>
 
-  <br>
-  <table align=center width=300px>
-    <tr>
-      <td align=center width=100px>
-        <center>
-          <span style="font-size:20px"><a href="">[pdf]</a></span>
-        </center>
-      </td>
-      <td align=center width=100px>
-        <center>
-          <span style="font-size:20px"><a href="https://github.com/Jiayuan-Gu/policy-refactorization/">[code]</a></span>
-        </center>
-      </td>
+			<br>
+			<br>
+            <table align=center width=1000px>
+                <tr>
+                    <td width=1000px>
+                      <center>
+                          <a href="./figures/framework.png"><img src = "./figures/framework.png" width="1000px"></img></href></a><br>
+                    </center>
+                    </td>
 
-    </tr>
-  </table>
+                </tr>
+            </table>
+            <table align=center width=900px></table>
+                <tr>
+                    <td width=600px>
+                        <br>
+                        <p align="justify" style="font-size: 18px">
+                          We study how to learn a policy with compositional generalizability. We propose a two-stage framework, which <i>refactorizes</i> a high-reward teacher policy into a generalizable student policy with strong inductive bias. Particularly, we implement an object-centric GNN-based student policy, whose input objects are learned from images through self-supervised learning.
+                          Empirically, we evaluate our approach on four difficult  tasks that require compositional generalizability, and achieve superior performance compared to baselines.
+                        </p>
+                    </td>
+                </tr>
+            </table>
 
-  <p>
-    We study how to learn a policy with compositional generalizability. We propose a two-stage framework, which \emph{refactorizes} a high-reward teacher policy into a generalizable student policy with strong inductive bias. Particularly, we implement an object-centric GNN-based student policy, whose input objects are learned from images through self-supervised learning.
-    Empirically, we evaluate our approach on four difficult  tasks that require compositional generalizability, and achieve superior performance compared to baselines.
-  </p>
+         <br>
+         <hr>
+         <!-- <table align=center width=550px> -->
+            <table align=center width=700>
+             <center><h1>Paper and Other Materials</h1></center>
+                <tr>
+                  <td><a href="https://arxiv.org/abs/2011.00971"><img style="height:180px; border: solid; border-radius:30px;" src="./files/paper.png"/></a></td>
+                  <td><span style="font-size:18px"> Tongzhou Mu*, Jiayuan Gu*, Zhiwei Jia, Hao Tang, Hao Su<br><br>
+                    Refactoring Policy for Compositional Generalizability using<br>Self-Supervised Object Proposals <br><br>
+                NeurIPS 2020
+                    </td>
+              </tr>
+            </table>
+            <br>
+
+            <table align=center width=900px>
+              <tr>
+					          <td>  
+                    <span style="font-size:18px"><center>
+                      <a href="./files/paper_policy_refactorization.pdf">[Paper]</a>
+                    </center></td>
+
+                    <td>  
+                      <span style="font-size:18px"><center>
+                        <a href="./files/supplement_policy_refactorization.pdf">[Supplement]</a>
+                      </center></td>
+
+                    <td><span style="font-size:18px"><center>
+                      <a href="./bib.html">[Bibtex]</a>
+                    </center></td>
+
+                    <td>  
+                      <span style="font-size:18px"><center>
+                        <a href="https://arxiv.org/abs/2011.00971">[Arxiv]</a>
+                      </center></td>
+                  
+                  <td><span style="font-size:18px"><center>
+                      <a href="./files/poster_policy_refactorization.pdf">[Poster]</a>
+                  </center></td>
+
+                  <td><span style="font-size:18px"><center>
+                    <a href="./files/slides_policy_refactorization.pdf">[Slides]</a>
+                  </center></td>
+
+                  
+                  <td><span style="font-size:18px"><center>
+                      <a href="https://github.com/Jiayuan-Gu/policy-refactorization">[Code]</a>
+                    </center></td>
+                  
+                  <td>  
+                    <span style="font-size:18px"><center>
+                      <a href="./files/additional_results.pdf">[Additional Results]</a>
+                    </center></td>
+                  
+
+              </tr>
+			</table>
+            
+			<br>
+		
+		
+		<br>
+        <hr>
+
+          <center><h1>Results</h1></center>
+		  
+		  <br>
+
+      <table align=center width=900px>
+       
+        <tr>
+       
+       <td>
+          <p  align="justify" >
+         
+            <span style="font-size:25px">
+                     <b>Multi-MNIST</b>
+           </span> 
+           
+           <br>
+          </p>       
+       </td>
+       
+       </tr>
+       
+        </table>
+        <br>
+
+
+       <table align=center width=900px>
+       
+       <tr>
+      
+      <td>
+            <p  align="justify" >
+        
+                    <span style="font-size:18px">
+          <!-- <hr style="height:20pt; visibility:hidden;" /> <!–– Spacing --> 
+                    <b>Generalize to more objects</b>
+          </span> 
+          
+          <br>
+          </p>       
+      </td>
+      
+      </tr>
+      
+       </table>
+       <br>
+
+
+       <table align=center width=900px>
+      
+      <tr>
+      <center>
+        <td colspan='2'>
+                    
+                    <center>
+                      <a href="figures/multi-mnist_visual.png"><img src = "figures/multi-mnist_visual.png" width="500"></img></a><br>
+                    </center>
+                </td>
+                <td colspan='2'>
+                    <center>
+                      <a href="figures/multi-mnist_result.png"><img src = "figures/multi-mnist_result.png" width="300"></img></a><br>
+                    </center>
+                </td>
+
+      </center>
+      </tr>
+      </table>
+
+      <table align=center width=900px>
+       
+       <tr>
+      
+      <td>
+          <hr style="height:12pt; visibility:hidden;" /> <!–– Spacing -->
+           
+           <p  align="justify" >
+                          <span style="font-size:15px"> 
+                            In Multi-MNIST, the task is to to calculate the summation of the digits in the image with complicated backgrounds (from CIFAR or ImageNet). Our model (GNN+SPACE) trained on images with 1 to 3 digits can generalize well to images with 4 digits.
+                            We show that object-centric graph can be a strong inductive bias for compositional generalizability.
+                    </span> 
+                    </p>          
+      </td>
+      
+      </tr>
+      
+       </table>
+
+
+      <br>
+      <br>
+
+       <table align=center width=900px>
+       
+        <tr>
+       
+       <td>
+             <p  align="justify" >
+         
+                     <span style="font-size:18px">
+           <!-- <hr style="height:20pt; visibility:hidden;" /> <!–– Spacing --> 
+                     <b>Task-relevant Knowledge Discovery</b>
+           </span> 
+           
+           <br>
+           </p>       
+       </td>
+       
+       </tr>
+       
+        </table>
+        <br>
+ 
+ 
+        <table align=center width=900px>
+       
+       <tr>
+       <center>
+         <td colspan='2'>
+                     
+                     <center>
+                       <a href="figures/task_relevant_knowledge.png"><img src = "figures/task_relevant_knowledge.png" width="900"></img></a><br>
+                     </center>
+                 </td>
+ 
+       </center>
+       </tr>
+       </table>
+ 
+       <table align=center width=900px>
+        
+        <tr>
+       
+       <td>
+           <hr style="height:12pt; visibility:hidden;" /> <!–– Spacing -->
+            
+            <p  align="justify" >
+              <span style="font-size:15px"> 
+                Object attributes emerge when the learned object features are clustered.
+                This figure shows the t-SNE visualization of the learned object features by the self-supervised object detector (CIFAR/ImageNet-Recon) and our policy GNN (CIFAR/ImageNet-Task).
+                It is observed that task-driven object features are more distinguishable compared to reconstruction-driven ones.
+            </span> 
+            </p>          
+       </td>
+       
+       </tr>
+       
+        </table>
+
+
+        <br>
+        <br>
+
+    <table align=center width=900px>
+    
+      <tr>
+      
+      <td>
+        <p  align="justify" >
+        
+          <span style="font-size:25px">
+                    <b>FallingDigit</b>
+          </span> 
+          
+          <br>
+        </p>       
+      </td>
+      
+      </tr>
+      
+      </table>
+      <br>        
+
+      <table align=center width=900px>
+    
+        <tr>
+        
+        <td>
+              <p  align="justify" >
+          
+                      <span style="font-size:18px">
+            <!-- <hr style="height:20pt; visibility:hidden;" /> <!–– Spacing --> 
+                      <b>Visualization of generalization</b>
+            </span> 
+            
+            <br>
+            </p>       
+        </td>
+        
+        </tr>
+        
+        </table>
+        <br>
+          
+
+
+       <table align=center width=900px>
+      <tr>
+      <center>
+                <td colspan='2'>
+                    <center>
+                        <a href="./figures/falling_digit_teacher_on_3.gif"><img src="./figures/falling_digit_teacher_on_3.gif" width="280px"></img></a><br>
+                    </center>
+                </td>
+                <td colspan='2'>
+                    <center>
+                        <a href="./figures/falling_digit_teacher_on_9.gif"><img src="./figures/falling_digit_teacher_on_9.gif" width="280px"></img></a><br>
+                    </center>
+                </td>
+                <td colspan='2'>
+                    <center>
+                        <a href="figures/falling_digit_gnn_student_on_9.gif"><img src = "figures/falling_digit_gnn_student_on_9.gif" width="280px"></img></a><br>
+                    </center>
+                </td>
+
+      </center>
+      </tr>
+      </table>
+
+
+      <br>
+      <table align=center width=900px>
+        <tr>
+          <td align=center width=200px>
+            <center>
+              <span style="font-size:16px"><div><b>Train on 3 digits</b></div></span>
+            </center>
+          </td>
+          <td align=center width=200px>
+            <center>
+              <span style="font-size:16px"><div><b>CNN-based teacher policy fails to generalize to 9 digits</b></div></span>
+            </center>
+          </td>
+          <td align=center width=200px>
+            <center>
+              <span style="font-size:16px"><div><b>GNN-based student policy generalizes to 9 digits</b></div></span>
+            </center>
+          </td>
+        </tr>
+      </table>
+
+
+      <table align=center width=900px>
+       
+        <tr>
+       
+       <td>
+           <hr style="height:12pt; visibility:hidden;" /> <!–– Spacing -->
+            
+            <p  align="justify" >
+              <span style="font-size:15px"> 
+                FallingDigit is a Tetris-like game. A digit is falling from the top and the player needs to control it to hit the digit with the closest value lying on the bottom.
+                We show that the student network with object-centric graph inductive bias can refactorize the teacher policy into a compositional generalizable policy.
+              </span> 
+            </p>          
+       </td>
+       
+       </tr>
+       
+        </table>
+
+
+
+      <br>
+      <br>
+      <table align=center width=900px>
+    
+        <tr>
+        
+        <td>
+              <p  align="justify" >
+          
+                      <span style="font-size:18px">
+            <!-- <hr style="height:20pt; visibility:hidden;" /> <!–– Spacing --> 
+                      <b>Quantitative results of generalization</b>
+            </span> 
+            
+            <br>
+            </p>       
+        </td>
+        
+        </tr>
+        
+      </table>
+      <br>
+
+
+
+
+ 
+      <table align=center width=900px>
+       
+        <tr>
+        <center>
+          <td colspan='2'>
+                      
+                      <center>
+                        <a href="figures/falling_digit_result.png"><img src = "figures/falling_digit_result.png" width="900"></img></a><br>
+                      </center>
+                  </td>
+  
+        </center>
+        </tr>
+        </table>
+  
+        <table align=center width=900px>
+         
+         <tr>
+        
+        <td>
+            <hr style="height:12pt; visibility:hidden;" /> <!–– Spacing -->
+             
+             <p  align="justify" >
+              <span style="font-size:15px"> 
+                The mean rewards got by different methods in the FallingDigit environments with different target digits.
+                Our refactorized GNN-based policy is trained on the environment with 3 target digits, and can generalize well to the environment with 9 target digits.
+              </span> 
+             </p>          
+        </td>
+        
+        </tr>
+        
+         </table>
+
+       
+
+       
+
+		  
+		   <br>
+		   <br>
+		  
+		  
+          <hr>
+		  
+		  <table align=center width=900px>
+			  <tr>
+                  <td colspan="5" style="font-size: 14px">
+                  <center>
+                      The website template is adapted from <a href="https://nv-tlabs.github.io/DefTet/">NVIDIA's DefTet project</a>, and we thank the template author <a href="http://www.cs.toronto.edu/~davidj/">David Acuna</a>.
+                  </center>
+                  </td>
+              </tr>
+			</table>
+
+
   
 </body>
 
